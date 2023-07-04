@@ -1,0 +1,628 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: rgb(133, 6, 31);
+}
+
+.hero {
+    
+    background-image: url("../Img/Fondo2.jpg");
+}
+
+.hero__header{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    padding-bottom: 0;
+
+}
+
+.hero__header .logo{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+}
+
+.header__right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+}
+
+
+.header__right p {
+    font-family: 'Roboto', sans-serif;
+}
+
+.header__right .menu {
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    display: flex;
+    font-size: 1.4rem;
+    gap: 2rem;
+    letter-spacing: 2px;
+}
+
+
+.hero__main{
+    display: flex;
+}
+
+.hero__main > div {
+    flex: 1;
+}
+
+
+.hero__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 3rem;
+}
+
+.hero__text h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.2 rem;
+    border: 2px dashed rgb(82, 14, 28);
+    width: max-content;
+    padding: .6rem;
+    padding-bottom: .4rem;
+    margin-bottom: 1rem;
+}
+
+.hero__text h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10rem;
+    text-shadow: 4px 6px 0 #040101;
+    
+}
+
+.hero__text h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 4rem;
+    text-shadow: 2px 6px 0 #040101;
+    
+}
+
+.hero__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block: 2rem;
+
+}
+
+.hero__img img {
+    width: 1000px;
+}
+
+
+/********GRID *******/
+
+.grid {
+    padding: 6rem;
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+     "item1 item2"
+     "item1 item3";
+    gap: 2rem;
+}
+
+.grid__item {
+    border-radius: 1rem;
+    background-size: cover;
+    background-position: center center ;
+    padding: 3rem;
+}
+
+.grid__item h5,
+.grid__item h4 {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300px;
+    text-shadow: 2px 2px 0 #040101;
+    
+}
+
+.grid__item h5{
+    font-size: 1.5rem;
+}
+
+.grid__item h4{
+    font-size: 2rem;
+}
+
+.grid__item1 {
+
+    grid-area: item1;
+    background-image: url("../Img/GRID1.jpg");
+    height: 600px;
+}
+
+.grid__item2 {
+    grid-area: item2;
+    background-image: url("../Img/GRID2.png");
+}
+
+.grid__item3 {
+    grid-area: item3;
+    background-image: url("../Img/GRID3.jpg");
+}
+
+/********* ENJOY********/
+
+.enjoy{
+    padding: 6rem;
+    padding-top: 0;
+
+}
+
+.titles{
+
+    text-align: center;
+    padding-inline: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 6rem;
+
+}
+
+.titles h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.7rem;
+    font-weight: 700;
+    background-color: yellow;
+    padding: .5rem 1rem .25rem 1rem;
+}
+
+.titles h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+}
+
+.titles p{
+    font-family: 'Roboto', sans-serif;
+}
+
+.cards {
+    display: flex;
+}
+
+.card{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.card img {
+    max-width: 100%;
+}
+
+.card h4 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.6rem;
+}
+
+.card p{
+    font-family: 'Roboto', sans-serif;
+    width: 75%;
+    text-align: center;
+}
+
+.card a {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    background-color: rgb(123, 21, 21);
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+
+/****** EVENTS ****/ 
+
+.events {
+    padding: 6rem;
+    padding-top: 0;
+}
+
+.inner {
+    display: flex;
+    padding: 2rem;
+    box-shadow: 15px 15px 30px rgb(157, 151, 151);
+}
+
+
+
+.inner__left{
+ padding-block: 2rem;
+ position: relative;
+
+
+}
+
+
+
+.inner__left,
+.inner__right {
+    flex: 1;
+    min-width: 0;
+}
+
+.inner__right img {
+    max-width: 100%;
+    
+}
+
+.inner__left h5 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.6rem;
+    color: black;
+    letter-spacing: 1px;
+
+}
+
+.inner__left h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+}
+
+.inner__left p {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 1.3rem;
+}
+
+
+.dots {
+    display: flex;
+    gap: 5px;
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+}
+
+.dot{
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.dot-y {
+    background-color: rgba(255, 255, 0, 0.711);
+}
+
+
+
+/***** RESERVATION *****/
+
+.reservation {
+    padding: 6rem;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-image: 
+    url("../Img/imagenform3.png"), 
+    url("../Img/imagenform1.png");
+    background-size: 
+    400px,
+    350px
+    ;
+    background-position: 
+    100px center,
+    1500px center
+    ;
+}
+
+.reservation__heading {
+    text-align: center;
+}
+
+.reservation__heading h5 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+}
+
+
+.reservation__heading h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+}
+
+.reservation__form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "name lastname"
+    "email phone"
+    "msj button";
+    width: 36rem;
+    gap: 1rem ;
+}
+
+.reservation__form input {
+    padding: .75rem 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: black;
+}
+
+
+.reservation__form .name{
+    grid-area: name;
+}
+
+.reservation__form .lastname{
+    grid-area: lastname;
+}
+
+.reservation__form .email{
+    grid-area: email;
+}
+
+.reservation__form .phone{
+    grid-area: phone;
+}
+
+.reservation__form .msj{
+    grid-area: msj;
+}
+
+.reservation__form .button{
+    grid-area: button;
+    border: 0;
+    background-color: rgb(134, 20, 20);
+    text-transform: uppercase;
+    color: white;
+    border-radius: 2px;
+    font-weight: 600;
+}
+
+
+
+/****** FOOOTER ****/
+
+footer{
+
+    padding: 6rem;
+    padding-top: 0;
+}
+
+.footer {
+
+    display: flex;
+    flex-direction: column;
+    background-image: url("../Img/GRID2.png");
+    background-size: cover;
+    background-position: center center;
+    padding: 2rem;
+    position: relative;
+}
+
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.43);
+  
+}
+
+.footer__top,
+.footer__bottom {
+    z-index: 1;
+}
+
+.footer__top {
+    display: flex;
+    padding-block: 3rem;
+
+}
+
+
+
+
+.footer h2,
+footer p {
+    color: white;
+}
+
+.footer__top >div{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer__top h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 3rem;
+
+}
+
+.footer__top p {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.address {
+    align-items: flex-end;
+    
+}
+
+.address p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.address p i {
+
+    color: white;
+    
+}
+
+
+.footer__bottom {
+
+    display: flex;
+    justify-content: space-between;
+    padding-top: 4rem;
+}
+
+.footer__bottom p {
+
+font-family: 'Roboto', sans-serif;
+
+}
+
+.footer__bottom .icons {
+    display: flex;
+    gap: 3rem;
+}
+
+.footer__bottom .icons i {
+    color: white;
+}
+
+
+@media screen and (max-width: 768px){
+
+    
+
+    .hero__header{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    .header__right{
+        align-items: flex-start;
+    }
+
+    .menu__item {
+        font-size: 18px;
+    }
+
+    .hero__img img{
+        width: 100%;
+    }
+
+    .hero__img{
+
+        padding-top: 0;
+    }
+
+
+    .hero__main{
+        flex-direction: column;
+        padding-inline: 2rem;
+        padding-top: 3rem;
+    }
+
+    .hero__text h2 {
+        font-size: 130px;
+    }
+
+    .grid {
+
+        display: flex;
+        flex-direction: column;
+        padding-inline: 2rem;
+        padding-top: 3rem;
+    }
+
+
+    .grid__item{
+        flex: 1;
+    }
+
+    .grid__item1 {
+        padding-bottom: 7rem;
+    }
+
+    .enjoy{
+        padding: 2rem;
+    }
+
+    .titles {
+        padding-inline: 0;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .events .inner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .events .inner__right{
+        order: -1;
+    }
+
+   .dots {
+    bottom: 0;
+   }
+
+   .reservation {
+    padding: 2rem;
+    background-image: none;
+   }
+
+   .reservation__form {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+
+   }
+
+
+   footer {
+    padding: 2rem;
+   }
+
+   .footer__top {
+    flex-direction: column;
+    padding: 0;
+    gap: 2rem;
+   }
+
+   .address {
+    align-items: flex-start;
+   }
+
+   .footer__bottom{
+    flex-direction: column;
+    gap: 1rem;
+   }
+
+   .footer__bottom .icons {
+    order: -1;
+   }
+
+
+}
+
